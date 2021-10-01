@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tesserract/static/css/main.90f19809.chunk.css",
-    "main.js": "/tesserract/static/js/main.2491be7a.chunk.js",
-    "main.js.map": "/tesserract/static/js/main.2491be7a.chunk.js.map",
+    "main.js": "/tesserract/static/js/main.88efaa27.chunk.js",
+    "main.js.map": "/tesserract/static/js/main.88efaa27.chunk.js.map",
     "runtime-main.js": "/tesserract/static/js/runtime-main.c79053d8.js",
     "runtime-main.js.map": "/tesserract/static/js/runtime-main.c79053d8.js.map",
     "static/css/2.f2512455.chunk.css": "/tesserract/static/css/2.f2512455.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.f2512455.chunk.css",
     "static/js/2.32fbf8aa.chunk.js",
     "static/css/main.90f19809.chunk.css",
-    "static/js/main.2491be7a.chunk.js"
+    "static/js/main.88efaa27.chunk.js"
   ]
 }
