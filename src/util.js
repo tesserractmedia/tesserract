@@ -17,10 +17,16 @@ export function suggestVideos(data, id, tags) {
             }
         }
     }
+
     if (suggestion.length < 5) {
-        for (let i = 0; i < (length || 5); i++) {
-            suggestion.push(data[i]);
+        let i=0;
+        while((i<length) && (suggestion.length <= 10) ){
+            if(!suggestion.includes(data[i]) && data[i].id !== id){
+                suggestion.push(data[i])
+            }
+            i++;
         }
     }
+   
     return suggestion;
 }

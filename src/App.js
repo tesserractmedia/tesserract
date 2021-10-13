@@ -7,7 +7,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  HashRouter
 } from "react-router-dom";
 import NotFound from './NotFound';
 import React from "react";
@@ -19,9 +20,10 @@ function App() {
 
 
   return (
-    <Router>
-      <div className="vh-100">
-        <Header title="Market" />
+    <HashRouter>
+      <div className="bg-secondary min-vh-100">
+        <Header title={data.brandname} />
+        <div className="p-2"></div>
         <DataContext.Provider value={data}>
           <Switch>
             <Route path='/' exact>
@@ -42,7 +44,7 @@ function App() {
           </Switch>
         </DataContext.Provider>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
