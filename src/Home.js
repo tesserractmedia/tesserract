@@ -12,7 +12,7 @@ function Home() {
     React.useEffect(()=>{
         axios.get("https://tesserract-green-screen.herokuapp.com/v1/video/latest/10").then(
             (response) => {
-                console.log(response);
+                setData(response.data)
             }
         )
     },[])
@@ -20,7 +20,7 @@ function Home() {
     return (
         <Container>
             <Row xl={4} lg={4} md={3} sm={2} xs={1} className="g-4">
-                {dataContext["videos"].slice(0, 8).map((video) => (
+                {data.slice(0, 8).map((video) => (
                     <Col>
                         <VideoCard data={video}/>
                     </Col>
